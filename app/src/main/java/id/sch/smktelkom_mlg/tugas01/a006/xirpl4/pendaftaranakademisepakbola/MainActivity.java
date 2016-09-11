@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         etNama = (EditText) findViewById(R.id.editTextnama);
-        etTahun = (EditText) findViewById(R.id.editTexttanggal);
+        etTahun = (EditText) findViewById(R.id.editTexttahun);
         etNomor = (EditText) findViewById(R.id.editTextnomor);
         etemail = (EditText) findViewById(R.id.editTextemail);
         buttondaftar = (Button) findViewById(R.id.buttondaftar);
