@@ -53,8 +53,6 @@ public class MainActivity extends AppCompatActivity {
     private void doProcess() {
         if (isValid()) {
             String nama = etNama.getText().toString();
-            String nomor = etNomor.getText().toString();
-            String email = etemail.getText().toString();
             tvdetail.setText("Selamat bergabung dalam akademi ini " + nama);
         }
     }
