@@ -18,7 +18,7 @@
         tools:context="id.sch.smktelkom_mlg.tugas01.a006.xirpl4.pendaftaranakademisepakbola.MainActivity">
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/textViewpendaftaran"
             style="@style/Base.TextAppearance.AppCompat.Headline"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -30,36 +30,40 @@
             android:layout_width="148dp"
             android:layout_height="148dp"
             android:layout_gravity="center_horizontal"
-            android:src="@drawable/Everton" />
+            android:src="@drawable/index" />
 
         <EditText
-            android:id="@+id/editText"
+            android:id="@+id/editTextnama"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:hint="Nama" />
 
         <EditText
-            android:id="@+id/editText2"
+            android:id="@+id/editTexttanggal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
+            android:hint="Tanggal Lahir"
             android:inputType="date" />
 
         <EditText
-            android:id="@+id/editText3"
+            android:id="@+id/editTextnomor"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
+            android:hint="Telepon/Hp"
             android:inputType="phone" />
 
         <EditText
-            android:id="@+id/editText4"
+            android:id="@+id/editTextemail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
+            android:hint="name@example.com"
             android:inputType="textEmailAddress" />
 
         <TextView
-            android:id="@+id/textView2"
+            android:id="@+id/textViewgender"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Jenis Kelamin :" />
@@ -69,14 +73,14 @@
             android:layout_height="wrap_content">
 
             <RadioButton
-                android:id="@+id/radioButton"
+                android:id="@+id/radioButtonl"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="false"
                 android:text="Laki-laki" />
 
             <RadioButton
-                android:id="@+id/radioButton2"
+                android:id="@+id/radioButtonp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="false"
@@ -89,48 +93,48 @@
             android:layout_height="wrap_content" />
 
         <TextView
-            android:id="@+id/textView3"
+            android:id="@+id/textViewposisi"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Posisi Bermain :" />
 
         <CheckBox
-            android:id="@+id/checkBox"
+            android:id="@+id/checkBoxk"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:checked="false"
             android:text="Kiper" />
 
         <CheckBox
-            android:id="@+id/checkBox2"
+            android:id="@+id/checkBoxb"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:checked="false"
             android:text="Bek" />
 
         <CheckBox
-            android:id="@+id/checkBox3"
+            android:id="@+id/checkBoxm"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:checked="false"
             android:text="Midfielder" />
 
         <CheckBox
-            android:id="@+id/checkBox4"
+            android:id="@+id/checkBoxf"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:checked="false"
             android:text="Forward" />
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/buttondaftar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:text="Daftar" />
 
         <TextView
-            android:id="@+id/textView4"
+            android:id="@+id/textViewdetail"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Detail Pendaftaran" />
