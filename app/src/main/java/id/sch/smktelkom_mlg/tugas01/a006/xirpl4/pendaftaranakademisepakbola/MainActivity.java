@@ -10,7 +10,7 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
 
     EditText etNama;
-    EditText etTanggal;
+    EditText etTahun;
     EditText etNomor;
     EditText etemail;
     Button buttondaftar;
@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         etNama = (EditText) findViewById(R.id.editTextnama);
-        etTanggal = (EditText) findViewById(R.id.editTexttanggal);
+        etTahun = (EditText) findViewById(R.id.editTexttanggal);
         etNomor = (EditText) findViewById(R.id.editTextnomor);
         etemail = (EditText) findViewById(R.id.editTextemail);
         buttondaftar = (Button) findViewById(R.id.buttondaftar);
@@ -33,8 +33,13 @@ public class MainActivity extends AppCompatActivity {
         buttondetail.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                tvlengkap.setText("Nama : " + etNama + "\nTanggal lahir : " + etTanggal + "\nTelepon/Hp : " + etNomor +
-                        "\nemail " + etemail);
+                String nama = etNama.getText().toString();
+                String nomor = etNomor.getText().toString();
+                String email = etemail.getText().toString();
+                int tahun = Integer.parseInt(etTahun.getText().toString());
+                int usia = 2016 - tahun;
+                tvlengkap.setText("Nama : " + nama + "\nUsia : " + usia + "\nTelepon/Hp : " + nomor +
+                        "\nemail " + email);
             }
         });
         buttondaftar.setOnClickListener(new View.OnClickListener() {

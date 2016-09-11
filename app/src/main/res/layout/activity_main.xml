@@ -39,11 +39,11 @@
             android:hint="Nama" />
 
         <EditText
-            android:id="@+id/editTexttanggal"
+            android:id="@+id/editTexttahun"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="Tanggal Lahir"
+            android:hint="Tahun Lahir"
             android:inputType="date" />
 
         <EditText
@@ -90,7 +90,8 @@
         <Spinner
             android:id="@+id/spinner"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:entries="@array/listnegara" />
 
         <TextView
             android:id="@+id/textViewposisi"
